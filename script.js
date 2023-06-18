@@ -235,7 +235,7 @@ function createRoom() {
         return;
     }
 
-    socket = new WebSocket('ws://13.49.246.178:443/ws');
+    socket = new WebSocket('wss://13.49.246.178:443/ws');
 
     // Handle WebSocket connection established event
     socket.onopen = function (event) {
@@ -281,7 +281,7 @@ function joinRoom() {
     }
 
     // Establish a WebSocket connection
-    socket = new WebSocket('ws://13.49.246.178:443/ws');
+    socket = new WebSocket('wss://13.49.246.178:443/ws');
 
     // Handle WebSocket connection established event
     socket.onopen = function (event) {
