@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2, h3, #cards-num label {
+    color: #f8f8f7;
+    -webkit-text-stroke: 1px black; /* width and color */
+    text-shadow: 2px 2px 0 #000;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2, #cards-num label {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    will-change: box-shadow, transform;
+    background: #FCFCFD;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    height: 48px;
+    padding: 0 32px;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #36395a;
+}
+
+button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+
+input[type="text"] {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 6px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+    border: 2px solid #dee1e2;
+    color: rgb(14, 14, 16);
+    background: #dee1e2;
+    height: 36px;
+}
+
+input[type="text"]:hover {
+    border-color: #ccc;
+}
+
+input[type="text"]:focus {
+    border-color: #9147ff;
+    background: #fff;
+}
+
+/* Page-specific styles */
+#create-room, #join-room, #nickname-selection, #player-list, #start-game, #title, #cards-num {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#create-room, #join-room, #nickname-selection {
+    text-align: center;
+}
+
+#player-list {
+    text-align: center;
+}
+
+#start-game {
+    text-align: center;
+}
+
+#room-code {
+    font-weight: bold;
+    font-size: 18rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+select {
+    font-size: 40px;
+    margin-top: 10px; /* Add margin-top to adjust the position */
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 3rem; /* Decreased font size */
+    }
+
+    h2, h3 {
+        font-size: 2.5rem; /* Decreased font size */
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    #create-room, #join-room, #nickname-selection, #player-list, #start-game, #title, #cards-num {
+        width: 80%;
+    }
+}
